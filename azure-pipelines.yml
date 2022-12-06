@@ -57,9 +57,9 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy App Service'
             inputs:
-              azureSubscription: 'Inform-your-subscription'
+              azureSubscription: 'Azure for Students (908e6223-40da-428d-91a5-e0910e345c80)'
               appType: 'webAppLinux'
-              appName: 'angularwithazure'
+              appName: 'angularfordemo'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               runtimeStack: 'NODE|10-lts'
 
